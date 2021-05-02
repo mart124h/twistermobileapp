@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#48BAED"
+    android:backgroundTint="#32BFFF"
+    tools:context=".StartupActivity">
+
+<!--    Welcome Form -->
+    <LinearLayout
+        android:id="@+id/startupWelcomeView"
+        android:layout_width="match_parent"
+        android:layout_height="361dp"
+        android:layout_marginBottom="30pt"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="visible"
+        tools:visibility="visible">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_marginBottom="20pt"
+            android:layout_weight="3"
+            android:longClickable="false"
+            app:srcCompat="@android:drawable/sym_action_chat" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:fontFamily="@font/averia_libre_bold"
+            android:gravity="center_horizontal"
+            android:text="Welcome to Twister"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#9C000000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/startUpcontinueButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#9C656565"
+            android:gravity="center_horizontal|center_vertical"
+            android:onClick="OpenLoginForm"
+            android:text="Continue ➜"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <!--   Login Form -->
+
+    <LinearLayout
+        android:id="@+id/startupLoginView"
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginHorizontal="20pt"
+        android:layout_marginTop="20pt"
+        android:layout_marginBottom="20pt"
+        android:orientation="vertical"
+
+        android:visibility="invisible"
+        android:weightSum="10"
+        tools:visibility="invisible">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:layout_marginBottom="1pt"
+            android:layout_weight="1"
+            android:fontFamily="@font/averia_libre_bold"
+            android:gravity="center_horizontal"
+            android:text="Before Continuing, Please Login"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#9C000000"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/startupEmailView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10pt"
+            android:layout_weight="1"
+            android:hint="Email Address" />
+
+        <EditText
+            android:id="@+id/startupPasswordView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            android:hint="Password"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5pt"
+            android:layout_weight="0.2"
+            android:fontFamily="@font/averia_libre_bold"
+
+            android:textAlignment="center">
+
+
+        </TextView>
+
+
+        <Button
+            android:id="@+id/startupLoginButton"
+            android:layout_width="match_parent"
+            android:onClick="login"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="20pt"
+            android:layout_weight="0.5"
+            android:backgroundTint="#9C656565"
+            android:text="LOGIN"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/startupOpenRegisterFormButton"
+            android:onClick="OpenRegisterForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="20pt"
+            android:layout_marginTop="2pt"
+            android:layout_weight="0.2"
+            android:backgroundTint="#9CE32929"
+            android:text="REGISTER"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+<!--    Register Account Form -->
+
+    <LinearLayout
+        android:id="@+id/startupRegisterView"
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginHorizontal="20pt"
+        android:layout_marginTop="20pt"
+        android:layout_marginBottom="20pt"
+        android:orientation="vertical"
+
+        android:visibility="invisible"
+        android:weightSum="10"
+        tools:visibility="invisible">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:layout_marginBottom="1pt"
+            android:layout_weight="1"
+            android:fontFamily="@font/averia_libre_bold"
+            android:gravity="center_horizontal"
+            android:text="become a part of twister"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#9C000000"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/startupRegisterEmailView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10pt"
+            android:layout_weight="1"
+            android:hint="Email Address" />
+
+        <EditText
+            android:id="@+id/startupRegisterPasswordView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Password"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5pt"
+            android:layout_weight="0.2"
+            android:fontFamily="@font/averia_libre_bold"
+
+            android:textAlignment="center">
+
+
+        </TextView>
+
+
+        <Button
+            android:id="@+id/startupRegisteringButton"
+            android:onClick="Register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="20pt"
+            android:layout_marginTop="2pt"
+            android:layout_weight="0.2"
+            android:backgroundTint="#9CE32929"
+            android:text="REGISTER NOW"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/startupBackToLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="20pt"
+            android:layout_weight="0.5"
+            android:backgroundTint="#9C656565"
+            android:onClick="OpenLoginForm"
+            android:text="BACK"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+
+    <!--    Account Registrered-->
+
+    <LinearLayout
+        android:id="@+id/startupRegCompletedForm"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginHorizontal="20pt"
+        android:layout_marginTop="20pt"
+        android:layout_marginBottom="20pt"
+        android:orientation="vertical"
+
+        android:visibility="invisible"
+        android:weightSum="10"
+        tools:visibility="invisible">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20pt"
+            android:layout_weight="3"
+            android:longClickable="false"
+            app:srcCompat="@android:drawable/checkbox_on_background" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginBottom="0pt"
+            android:layout_weight="1"
+            android:fontFamily="@font/averia_libre_bold"
+            android:gravity="center_horizontal"
+            android:text="Account Registred"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#9C000000"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10pt"
+            android:layout_marginBottom="20pt"
+            android:layout_weight="0.2"
+
+            android:fontFamily="@font/averia_libre_bold"
+            android:text="Email: user@gmail.com"
+            android:textAlignment="textStart">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/startupRegCompletedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="20pt"
+            android:layout_weight="0.5"
+            android:backgroundTint="#9C656565"
+            android:onClick="OpenMainActivity"
+            android:text="Let's Go!"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+
+<!--    Terms and Conditions Form -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/termsButton"
+            android:onClick="OpenTerms"
+            android:layout_width="271dp"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            android:backgroundTint="#00FFFFFF"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:text="Terms and Conditions"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

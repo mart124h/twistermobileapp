@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.TwisterMandatoryApp.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/Theme.TwisterMandatoryApp.PopupOverlay" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <RelativeLayout
+            android:layout_width="349dp"
+            android:layout_height="307dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10pt"
+            android:layout_marginBottom="1dp">
+
+
+            <TextView
+                android:id="@+id/list_item_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/averia_libre_bold"
+                android:text="CREATE A POST"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/list_item_user"
+                android:layout_width="298dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textStyle="italic" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="75dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#F8F8F8">
+
+                <EditText
+                    android:id="@+id/createactivityPostText"
+                    android:layout_width="335dp"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="top"
+                    android:hint="✎"
+                    android:maxLength="120"
+                    android:singleLine="false" />
+                <!--                android:text="This is my first post on Twister and I have made sure not to write any negative stuff" />-->
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/createpostMessageView"
+                android:layout_width="331dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5pt"
+                android:layout_marginTop="90pt"
+                android:fontFamily="@font/averia_libre_bold"
+                android:text="MAX 100 WORDS &amp; NO SWEAR WORDS"
+                android:textAlignment="viewStart"
+                android:textSize="10sp"></TextView>
+
+            <Button
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="30pt"
+                android:layout_marginTop="110pt"
+                android:backgroundTint="#E53935"
+                android:onClick="CreatePost"
+                android:text="Post"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="145pt"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/termsButton"
+                android:layout_width="271dp"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:backgroundTint="#00FFFFFF"
+                android:gravity="center"
+                android:onClick="OpenTerms"
+                android:text="Terms and Conditions"
+                android:textAlignment="gravity"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
